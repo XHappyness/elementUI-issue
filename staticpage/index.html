@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.4.1/lib/theme-chalk/index.css">
+    <style>
+        .home{
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="home">
+            <el-select style="width:100%;" v-model="value10" multiple filterable placeholder="请选择文章标签">
+                <el-option v-for="item in options5" :key="item.value" :label="item.label" :value="item.value">
+                </el-option>
+            </el-select>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+</script>
+<script src="https://unpkg.com/element-ui@2.4.1/lib/index.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            options5: [{
+                value: '1',
+                label: '1111111111111111111'
+            }, {
+                value: '2',
+                label: '2222222222222222222'
+            }, {
+                value: '3',
+                label: '333333333333333333'
+            }, {
+                value: '4',
+                label: '444444444444444444'
+            }, {
+                value: '5',
+                label: '55555555555555555'
+            }, {
+                value: '6',
+                label: '66666666666666666'
+            }],
+            value10: []
+        },
+    });
+</script>
+</html>
