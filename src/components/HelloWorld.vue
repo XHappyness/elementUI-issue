@@ -1,14 +1,13 @@
 <template>
   <div class="home">
     <el-select 
-            style="width:100%;" 
-            v-model="value10" 
-            multiple 
-            filterable 
-            placeholder="请选择文章标签">
-            <el-option v-for="item in options5" :key="item.value" :label="item.label" :value="item.value">
-            </el-option>
-          </el-select>
+        style="width:100%;" 
+        v-model="value10" 
+        multiple 
+        filterable 
+        placeholder="请选择文章标签">
+        <el-option v-for="item in options5" :key="item.value" :label="item.label" :value="item.value"></el-option>
+    </el-select>
   </div>
 </template>
 
@@ -43,6 +42,6 @@ export default {
 
 <style>
  .home{
-            width: 500px;
-        }
+    width: 500px;
+  }
 </style>
